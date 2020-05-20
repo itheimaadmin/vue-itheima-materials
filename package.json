@@ -1,0 +1,23 @@
+{
+  "name": "vue-itheima-materials",
+  "version": "0.1.0",
+  "description": "itheima vue ice 物料模板",
+  "author": "",
+  "scripts": {
+    "deploy": "npm run generate && npm run sync",
+    "generate": "iceworks generate",
+    "sync": "iceworks sync",
+    "lint": "npm run eslint && npm run stylelint",
+    "eslint": "eslint --cache --ext .js,.jsx ./",
+    "stylelint": "stylelint ./**/*.scss"
+  },
+  "files": ["build"],
+  "devDependencies": {
+    "@ice/spec": "^1.0.1",
+    "eslint": "^6.0.1",
+    "stylelint": "^13.1.0"
+  },
+  "materialConfig": {
+    "type": "vue"
+  }
+}
