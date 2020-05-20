@@ -1,8 +1,8 @@
 {
   "name": "vue-itheima-materials",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "itheima vue ice 物料模板",
-  "author": "taoshiwei <taoshiwei@itcast.cn>",
+  "author": "itheimaadmin@163.com",
   "scripts": {
     "deploy": "npm run generate && npm run sync",
     "generate": "iceworks generate",
@@ -11,11 +11,15 @@
     "eslint": "eslint --cache --ext .js,.jsx ./",
     "stylelint": "stylelint ./**/*.scss"
   },
-  "files": ["build"],
+  "files": ["build/"],
   "devDependencies": {
     "@ice/spec": "^1.0.1",
     "eslint": "^6.0.1",
     "stylelint": "^13.1.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "http://registry.npmjs.org"
   },
   "materialConfig": {
     "type": "vue"
