@@ -1,8 +1,7 @@
 {
   "name": "@vue-itheima-materials/vue-typescript-admin-template",
   "version": "0.1.0",
-  "private": true,
-  "author": "itheima <admin@itheima.com>",
+  "author": "taoshiwei <taoshiwei@itcast.cn>",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -71,7 +70,7 @@
   },
   "scaffoldConfig": {
     "name": "itheima-admin-ts",
-    "title": "Itheima Admin TS V2",
+    "title": "Itheima Admin TypeScript",
     "screenshot": "https://img.alicdn.com/tfs/TB1SqrjontYBeNjy1XdXXXXyVXa-2842-1596.png",
     "categories": [
       "基础模板"

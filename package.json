@@ -2,7 +2,7 @@
   "name": "vue-itheima-materials",
   "version": "0.1.0",
   "description": "itheima vue ice 物料模板",
-  "author": "",
+  "author": "taoshiwei <taoshiwei@itcast.cn>",
   "scripts": {
     "deploy": "npm run generate && npm run sync",
     "generate": "iceworks generate",
