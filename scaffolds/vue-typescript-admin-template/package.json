@@ -8,6 +8,7 @@
     "public/",
     "demo/",
     "tests/",
+    ".gitignore",
     ".browserslistrc",
     ".editorconfig",
     ".env",

@@ -9,11 +9,15 @@
     "sync": "iceworks sync",
     "lint": "npm run eslint && npm run stylelint",
     "eslint": "eslint --cache --ext .js,.jsx ./",
-    "stylelint": "stylelint ./**/*.scss"
+    "stylelint": "stylelint ./**/*.scss",
+    "upload": "node scripts/upload-oss.js"
   },
-  "files": ["build/"],
+  "files": [
+    "build"
+  ],
   "devDependencies": {
     "@ice/spec": "^1.0.1",
+    "ali-oss": "^6.8.0",
     "eslint": "^6.0.1",
     "stylelint": "^13.1.0"
   },
@@ -22,6 +26,7 @@
     "registry": "http://registry.npmjs.org"
   },
   "materialConfig": {
-    "type": "vue"
+    "type": "vue",
+    "template": "@icedesign/ice-vue-material-template"
   }
 }
