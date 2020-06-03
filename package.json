@@ -10,7 +10,8 @@
     "lint": "npm run eslint && npm run stylelint",
     "eslint": "eslint --cache --ext .js,.jsx ./",
     "stylelint": "stylelint ./**/*.scss",
-    "upload": "node scripts/upload-oss.js"
+    "upload": "node scripts/upload-oss.js",
+    "build": "npm run generate && npm run upload"
   },
   "files": [
     "build"

@@ -2,4 +2,4 @@
 
 ## ice 订阅地址
 
-https://yjy-oss-files.oss-cn-zhangjiakou.aliyuncs.com/ice-materials/materials.json
+https://yjy-oss-files.oss-cn-zhangjiakou.aliyuncs.com/ice-materials/vue-itheima-materials.json
