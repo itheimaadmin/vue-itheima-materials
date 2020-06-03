@@ -1,6 +1,6 @@
 {
   "name": "@vue-itheima-materials/basic-table-block",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "基于 element-ui 组件的基础表格列表 - TypeScript",
   "files": [
     "src/",
@@ -22,6 +22,6 @@
   "blockConfig": {
     "name": "BasicTableBlockTypescript",
     "title": "基础表格",
-    "category": "表格"
+    "category": "spa"
   }
 }
