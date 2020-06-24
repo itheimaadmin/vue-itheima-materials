@@ -1,7 +1,7 @@
 {
-  "name": "@vue-itheima-materials/basic-table-block",
-  "version": "1.1.2",
-  "description": "基础表格列表 - TypeScript",
+  "name": "@vue-itheima-materials/dialog-search-block",
+  "version": "1.1.1",
+  "description": "搜索弹出窗口 - TypeScript",
   "files": [
     "src/",
     "lib/",
@@ -20,8 +20,8 @@
     "registry": "http://registry.npmjs.org"
   },
   "blockConfig": {
-    "name": "BasicTableBlockTypescript",
-    "title": "基础表格",
+    "name": "DialogSearchBlockTypescript",
+    "title": "搜索弹出窗口",
     "category": "表格"
   }
 }

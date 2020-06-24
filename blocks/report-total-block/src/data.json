@@ -1,0 +1,19 @@
+{
+	"success": true,
+	"message": "success",
+	"code": 200,
+	"data": [{
+		"dimension": "当季销量",
+		"unit": "万件",
+		"count": 314949439,
+		"increase": true,
+		"percentage": 34
+	},
+	{
+		"dimension": "当季营销额",
+		"unit": "万元",
+		"count": 100661730,
+		"increase": false,
+		"percentage": 12
+	}]
+}

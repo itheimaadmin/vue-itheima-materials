@@ -1,0 +1,18 @@
+{
+	"success": true,
+	"message": "success",
+	"code": 200,
+	"data": [{
+		"typeId": 1,
+		"typeName": "投放工单"
+	}, {
+		"typeId": 2,
+		"typeName": "补货工单"
+	}, {
+		"typeId": 3,
+		"typeName": "维修工单"
+	}, {
+		"typeId": 4,
+		"typeName": "撤机工单"
+	}]
+}

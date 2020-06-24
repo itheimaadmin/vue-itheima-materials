@@ -1,7 +1,7 @@
 {
-  "name": "@vue-itheima-materials/basic-table-block",
-  "version": "1.1.2",
-  "description": "基础表格列表 - TypeScript",
+  "name": "@vue-itheima-materials/report-total-block",
+  "version": "1.1.0",
+  "description": "报表统计 - TypeScript",
   "files": [
     "src/",
     "lib/",
@@ -20,8 +20,8 @@
     "registry": "http://registry.npmjs.org"
   },
   "blockConfig": {
-    "name": "BasicTableBlockTypescript",
-    "title": "基础表格",
-    "category": "表格"
+    "name": "ReportTotalBlockTypescript",
+    "title": "报表统计",
+    "category": "图标"
   }
 }
