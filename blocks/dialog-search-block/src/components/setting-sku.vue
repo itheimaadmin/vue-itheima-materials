@@ -138,8 +138,6 @@ const setSkuJsonData = require('../json/set_sku.json')
 export default class SettingSku extends Vue {
   @PropSync('dialogVisible', { type: Boolean, default: false })
   syncDialogVisible!: boolean
-  @Prop({ default: '' }) readonly innerCode!: string
-  @Prop({ default: '' }) readonly channelCode!: string
 
   private total: number = 0
   private list: ISkuEntity[] = []
@@ -151,8 +149,6 @@ export default class SettingSku extends Vue {
   }
   private currentRow: ISkuEntity = defaultSkuData
   private skuForm = {
-    innerCode: '',
-    channelCode: '',
     skuId: 0
   }
 
@@ -209,8 +205,6 @@ export default class SettingSku extends Vue {
 
   async ensureDialog() {
     this.skuForm = {
-      innerCode: this.innerCode,
-      channelCode: this.channelCode,
       skuId: this.currentRow.skuId
     }
     const { code, message } = setSkuJsonData

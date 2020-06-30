@@ -1,6 +1,6 @@
 {
   "name": "@vue-itheima-materials/curd-table-block",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "CURD表格（搜索、翻页、新增） - TypeScript",
   "files": [
     "src/",

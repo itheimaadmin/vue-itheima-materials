@@ -125,6 +125,9 @@ export default class extends Vue {
   private taskTypeList: ITaskTypeEntity[] = []
 
   async open() {
+    // 表单重置
+    let form: ElForm = this.$refs['form'] as ElForm
+    form.resetFields()
     // 工单类型列表
     this.getTaskTypeList()
   }
@@ -144,35 +147,39 @@ export default class extends Vue {
   /**
    * 工单新增
    */
-  async ensureDialog() {
+  private ensureDialog() {
     // 表单验证
     let form: ElForm = this.$refs['form'] as ElForm
-    form.validate(async(valid: boolean) => {
-      if (valid) {
-        // 提交表单
-        const { code, message } = await new Promise(resolve => {
-          setTimeout(() => {
-            resolve(createTaskJsonData)
-          }, 500)
-        })
-        if (code !== 200) {
-          Message({
-            message: message,
-            type: 'error',
-            duration: 5 * 1000
-          })
-        } else {
-          Message({
-            message: '操作成功',
-            type: 'success',
-            duration: 5 * 1000
-          })
-          this.syncDialogVisible = false
-          // TODO: @Emit装饰
-          this.$emit('refreshList')
-        }
-      }
+    form.validate().then(() => {
+      // 提交表单
+      this.submitTaskForm()
+    }).catch((err: boolean) => {
+      console.log('err: ' + err)
     })
+  }
+
+  private async submitTaskForm() {
+    const { code, message } = await new Promise(resolve => {
+      setTimeout(() => {
+        resolve(createTaskJsonData)
+      }, 500)
+    })
+    if (code !== 200) {
+      Message({
+        message: message,
+        type: 'error',
+        duration: 5 * 1000
+      })
+    } else {
+      Message({
+        message: '操作成功',
+        type: 'success',
+        duration: 5 * 1000
+      })
+      this.syncDialogVisible = false
+      // TODO: @Emit装饰
+      this.$emit('refreshList')
+    }
   }
 }
 </script>

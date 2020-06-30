@@ -9,8 +9,6 @@
     <div>当前选中的数据：{{ currentRow }}</div>
     <setting-sku
       :dialog-visible.sync="dialogVisible"
-      :inner-code="innerCode"
-      :channel-code="channelCode"
       @currentRow="handleCurrentRow"
     />
   </div>
@@ -29,8 +27,6 @@ import { defaultSkuData, ISkuEntity } from './entity'
 })
 export default class extends Vue {
   private dialogVisible: boolean = false
-  private innerCode: string = ''
-  private channelCode: string = ''
   private currentRow: ISkuEntity = defaultSkuData
 
   private async handleCurrentRow(currentRow: ISkuEntity) {
@@ -38,6 +34,3 @@ export default class extends Vue {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-</style>
